@@ -9,7 +9,7 @@ const trianglePoints = [
 
 if (canvas.getContext) {
   var ctx = canvas.getContext("2d");
-  drawTriangle();
+  //   drawTriangle();
 
   let x = randomPoint();
   let y = randomPoint();
@@ -21,7 +21,7 @@ if (canvas.getContext) {
       y = (trianglePoints[r][1] + y) / 2;
 
       drawDot(x, y);
-    }, 0);
+    }, 100);
   }
 } else {
   body.innerHTML = `
@@ -42,7 +42,7 @@ function randomTrianglePoint() {
 
 function drawDot(x, y) {
   ctx.fillStyle = "#000000";
-  ctx.fillRect(x, y, 1, 1);
+  ctx.fillRect(x, y, 2, 2);
 }
 
 function drawTriangle() {
