@@ -42,7 +42,7 @@ function randomTrianglePoint() {
 
 function drawDot(x, y) {
   ctx.fillStyle = "#000000";
-  ctx.fillRect(x, y, 4, 4);
+  ctx.fillRect(x, y, 1, 1);
 }
 
 function drawTriangle() {
